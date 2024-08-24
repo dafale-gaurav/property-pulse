@@ -6,8 +6,13 @@ import {
     FaCheck,
     FaMapMarker,
   } from 'react-icons/fa';
+  import dynamic from "next/dynamic";
   
   const PropertyDetails = ({ property }) => {
+    const Map = dynamic(() => import("@/components/map"), {
+      ssr: false,
+    });
+
     return (
       <main>
         <div className='bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
@@ -91,6 +96,7 @@ import {
           </ul>
         </div>
         <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
+        <Map property={property}/>
         </div>
       </main>
     );
