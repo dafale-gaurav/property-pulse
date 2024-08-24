@@ -11,6 +11,7 @@ import PropertyContactForm from '@/components/PropertyContactForm';
 import ShareButtons from '@/components/ShareButtons';
 import Spinner from '@/components/Spinner';
 import { FaArrowLeft } from 'react-icons/fa';
+import Map from '@/components/Map';
 
 const PropertyPage = () => {
   const { id } = useParams();
