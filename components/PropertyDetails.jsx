@@ -9,7 +9,7 @@ import {
   import dynamic from "next/dynamic";
   
   const PropertyDetails = ({ property }) => {
-    const Map = dynamic(() => import("@/components/map"), {
+    const Map = dynamic(() => import("@/components/PropertyMap"), {
       ssr: false,
     });
 
